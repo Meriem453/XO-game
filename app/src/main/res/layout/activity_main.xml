@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="3"
+    android:layout_column="3"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="356dp"
+        android:layout_height="356dp"
+        android:background="@color/green"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible"
+
+
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:theme="@style/Button.white"
+            android:visibility="visible"
+            app:rippleColor="#FFFFFF"
+            tools:visibility="visible" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/replay"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/player_1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/player_2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toEndOf="@+id/player1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <TextView
+        android:id="@+id/s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toEndOf="@+id/player2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
