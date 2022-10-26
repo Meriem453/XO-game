@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     String[][] grid;
     int score1,score2;
     String player;
+    String p1,p2;
     //TextView tscore1,tscore2;
          TextView   player1,player2;
 
@@ -41,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
         btn8.setText("");
         btn9.setText("");
 
-/*
+
         //initialize the scores
-        tscore1.setText(score1);
-        tscore2.setText(score2);*/
+        //tscore1.setText(score1);
+        //tscore2.setText(score2);
     }
     //activate/disactivate buttons
     void click(boolean clickable){
@@ -91,11 +92,11 @@ public class MainActivity extends AppCompatActivity {
 
             if(player.equals("x")){
                 score1++;
-                Toast.makeText(this, "Player 1 wins", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, p1+" wins the game", Toast.LENGTH_SHORT).show();
                 //win.setText("Congrats player 1");
             }else{
                 score2++;
-                Toast.makeText(this, "Player 2 wins", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, p2+" wins the game", Toast.LENGTH_SHORT).show();
                 //win.setText("Congrats player 2");
             }
 
@@ -136,16 +137,17 @@ public class MainActivity extends AppCompatActivity {
         replay=findViewById(R.id.replay);
 
 
-       // tscore1=findViewById(R.id.s1);
-       //  tscore2=findViewById(R.id.s2);
+        //tscore1=findViewById(R.id.score1);
+         //tscore2=findViewById(R.id.score2);
 
          player1=findViewById(R.id.player1);
          player2=findViewById(R.id.player2);
          //diplay player's names
           Intent intent=getIntent();
-          String n=intent.getStringExtra(Welcome.PLAYER1_KEY);
-          player1.setText(intent.getStringExtra(Welcome.PLAYER1_KEY));
-          player2.setText(intent.getStringExtra(Welcome.PLAYER2_KEY));
+          p1=intent.getStringExtra(Welcome.PLAYER1_KEY);
+          p2=intent.getStringExtra(Welcome.PLAYER2_KEY);
+          player1.setText(p1);
+          player2.setText(p2);
 
 
          //initialize data
