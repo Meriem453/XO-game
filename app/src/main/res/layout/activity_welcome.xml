@@ -22,8 +22,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/tv2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl2"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginBottom="80dp"
@@ -33,21 +33,35 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:id="@+id/tv2"/>
 
-    <EditText
-        android:id="@+id/tv1"
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl1"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="@string/player_1"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        app:layout_constraintBottom_toTopOf="@+id/tl2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintVertical_bias="0.87">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv1"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:textColorHint="#616161" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/start"
