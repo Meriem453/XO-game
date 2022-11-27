@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn1.setText(player);
                 grid[0][0]=player;
-
+                btn1.setClickable(false);
                 check();
             }
         });
@@ -184,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
                 btn2.setText(player);
                 grid[0][1]=player;
                 check();
+                btn2.setClickable(false);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -191,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn3.setText(player);
                 grid[0][2]=player;
-
+                btn3.setClickable(false);
                 check();
             }
         });
@@ -200,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn4.setText(player);
                 grid[1][0]=player;
-
+                 btn4.setClickable(false);
                 check();
             }
         });
@@ -209,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn5.setText(player);
                 grid[1][1]=player;
-
+                     btn5.setClickable(false);
                 check();
             }
         });
@@ -218,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn6.setText(player);
                 grid[1][2]=player;
-
+                   btn6.setClickable(false);
                check();
             }
         });
@@ -227,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn7.setText(player);
                 grid[2][0]=player;
-
+                    btn7.setClickable(false);
                 check();
             }
         });
@@ -236,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn8.setText(player);
                 grid[2][1]=player;
-
+                  btn8.setClickable(false);
                 check();
             }
         });
@@ -245,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 btn9.setText(player);
                 grid[2][2]=player;
-
+                   btn9.setClickable(false);
                 check();
             }
         });
